@@ -52,14 +52,14 @@ public class DepartmentController {
         @ApiResponse(responseCode = "500", description = "ApiException")
     })  
     @PostMapping(value = "/create")
-    public ResponseEntity<EntityModel<Void>> createDepartment(@Valid @RequestBody DepartmentDto departmentDto) throws Exception {
+    public ResponseEntity<EntityModel<DepartmentDto>> createDepartment(@Valid @RequestBody DepartmentDto departmentDto) throws Exception {
         
         DepartmentDto savedDepartment = departmentService.saveDepartment(departmentDto);
         
 
         // RESTful API에서 새 리소스를 생성한 후, 그 위치를 클라이언트에게 전달하기 위해서 링크를 추가한다.
     
-        EntityModel<Void> departmentResource = EntityModel.of(null);
+        EntityModel<DepartmentDto> departmentResource = EntityModel.of(savedDepartment);
         departmentResource.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).retrieveDepartmentById(savedDepartment.getDepartmentId())).withSelfRel());
     
         return ResponseEntity.ok(departmentResource);

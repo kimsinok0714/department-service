@@ -1760,3 +1760,188 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2024-08-21T09:16:43.056+09:00  INFO 23340 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2024-08-21T09:16:43.289+09:00  INFO 23340 --- [http-nio-auto-1-exec-2] c.m.d.service.DepartmentService          : savedDepartment : com.mzc.department_service.domain.Department@5c390630
 2024-08-21T09:16:43.324+09:00  WARN 23340 --- [http-nio-auto-1-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Content must not be null!]
+2024-08-21T09:31:14.255+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : The following 1 profile is active: "dev"
+2024-08-21T09:31:15.589+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-21T09:31:15.734+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interfaces.
+2024-08-21T09:31:16.094+09:00  INFO 13968 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cf3abf0b-2322-3270-90f5-9c8030a55b46
+2024-08-21T09:31:16.846+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-08-21T09:31:16.865+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-21T09:31:16.866+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-08-21T09:31:16.994+09:00  INFO 13968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-21T09:31:16.995+09:00  INFO 13968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2719 ms
+2024-08-21T09:31:17.427+09:00  INFO 13968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-21T09:31:17.518+09:00  INFO 13968 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-08-21T09:31:17.959+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-21T09:31:18.245+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33d2a612
+2024-08-21T09:31:18.248+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-21T09:31:18.315+09:00  INFO 13968 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-21T09:31:19.287+09:00  INFO 13968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-21T09:31:19.302+09:00  INFO 13968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T09:31:19.775+09:00  WARN 13968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-21T09:31:22.637+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:31:23.137+09:00  WARN 13968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-21T09:31:24.308+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:31:24.324+09:00  INFO 13968 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-21T09:31:24.461+09:00  WARN 13968 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-21T09:31:24.479+09:00  INFO 13968 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-21T09:31:24.682+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55057 (http) with context path ''
+2024-08-21T09:31:24.683+09:00  INFO 13968 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55057
+2024-08-21T09:31:24.692+09:00  INFO 13968 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-21T09:31:24.743+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-21T09:31:24.750+09:00  INFO 13968 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-21T09:31:24.783+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-21T09:31:24.784+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-21T09:31:24.785+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-21T09:31:24.787+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-21T09:31:24.788+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-21T09:31:24.789+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-21T09:31:24.789+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-21T09:31:25.158+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-21T09:31:25.160+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-21T09:31:25.163+09:00  INFO 13968 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-21T09:31:25.171+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1724200285170 with initial instances count: 0
+2024-08-21T09:31:25.175+09:00  INFO 13968 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2024-08-21T09:31:25.177+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724200285177, current=UP, previous=STARTING]
+2024-08-21T09:31:25.180+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:d667d0d8fd17ce0a537245958f0066e0: registering service...
+2024-08-21T09:31:25.327+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:d667d0d8fd17ce0a537245958f0066e0 - registration status: 204
+2024-08-21T09:31:26.400+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:31:26.434+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : Started DepartmentServiceApplication in 18.357 seconds (process running for 19.193)
+2024-08-21T09:31:55.165+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-21T09:31:55.166+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-21T09:31:55.168+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-21T09:31:55.168+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-21T09:31:55.169+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-21T09:31:55.172+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-08-21T09:31:55.173+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-21T09:31:55.184+09:00  INFO 13968 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-21T09:33:00.141+09:00  INFO 13968 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-21T09:33:00.142+09:00  INFO 13968 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-21T09:33:00.146+09:00  INFO 13968 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-21T09:33:00.416+09:00  INFO 13968 --- [http-nio-auto-1-exec-1] c.m.d.service.DepartmentService          : savedDepartment : com.mzc.department_service.domain.Department@5a21c67c
+2024-08-21T09:33:00.484+09:00  WARN 13968 --- [http-nio-auto-1-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Content must not be null!]
+2024-08-21T09:36:24.798+09:00  INFO 13968 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-21T09:37:44.777+09:00  INFO 13968 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-08-21T09:37:44.784+09:00  INFO 13968 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DEPARTMENT-SERVICE with eureka with status DOWN
+2024-08-21T09:37:44.786+09:00  INFO 13968 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724200664786, current=DOWN, previous=UP]
+2024-08-21T09:37:44.787+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:d667d0d8fd17ce0a537245958f0066e0: registering service...
+2024-08-21T09:37:44.801+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:d667d0d8fd17ce0a537245958f0066e0 - registration status: 204
+2024-08-21T09:37:44.811+09:00  INFO 13968 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-21T09:37:44.813+09:00  INFO 13968 --- [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-08-21T09:37:44.826+09:00  INFO 13968 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T09:37:44.832+09:00  INFO 13968 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-21T09:37:44.839+09:00  INFO 13968 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-21T09:37:44.841+09:00  INFO 13968 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-08-21T09:37:47.858+09:00  INFO 13968 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-08-21T09:37:47.868+09:00  INFO 13968 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:d667d0d8fd17ce0a537245958f0066e0 - deregister  status: 200
+2024-08-21T09:37:47.873+09:00  INFO 13968 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-08-21T09:37:53.140+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : The following 1 profile is active: "dev"
+2024-08-21T09:37:53.684+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-21T09:37:53.697+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2024-08-21T09:37:53.817+09:00  INFO 13968 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cf3abf0b-2322-3270-90f5-9c8030a55b46
+2024-08-21T09:37:53.888+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-08-21T09:37:53.889+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-21T09:37:53.890+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-08-21T09:37:53.918+09:00  INFO 13968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-21T09:37:53.918+09:00  INFO 13968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2024-08-21T09:37:54.045+09:00  INFO 13968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-21T09:37:54.062+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-21T09:37:54.086+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a9038cc
+2024-08-21T09:37:54.087+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-21T09:37:54.088+09:00  INFO 13968 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-21T09:37:54.141+09:00  INFO 13968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-21T09:37:54.143+09:00  INFO 13968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T09:37:54.286+09:00  WARN 13968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-21T09:37:56.368+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:37:56.441+09:00  WARN 13968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-21T09:37:57.553+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:37:57.564+09:00  INFO 13968 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-21T09:37:57.580+09:00  WARN 13968 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-21T09:37:57.585+09:00  INFO 13968 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-21T09:37:57.619+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55130 (http) with context path ''
+2024-08-21T09:37:57.619+09:00  INFO 13968 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55130
+2024-08-21T09:37:57.620+09:00  INFO 13968 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-21T09:37:57.623+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-21T09:37:57.624+09:00  INFO 13968 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-21T09:37:57.632+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-21T09:37:57.633+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-21T09:37:57.633+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-21T09:37:57.633+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-21T09:37:57.633+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-21T09:37:57.634+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-21T09:37:57.634+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-21T09:37:57.657+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-21T09:37:57.658+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-21T09:37:57.660+09:00  INFO 13968 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-21T09:37:57.661+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1724200677661 with initial instances count: 2
+2024-08-21T09:37:57.663+09:00  INFO 13968 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2024-08-21T09:37:57.664+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724200677664, current=UP, previous=STARTING]
+2024-08-21T09:37:57.665+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:ed0f08605e5d52499d98ecbe1383dda8: registering service...
+2024-08-21T09:37:57.682+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:ed0f08605e5d52499d98ecbe1383dda8 - registration status: 204
+2024-08-21T09:37:58.772+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:37:58.794+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : Started DepartmentServiceApplication in 10.847 seconds (process running for 411.553)
+2024-08-21T09:37:58.798+09:00  INFO 13968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-21T09:40:09.731+09:00  INFO 13968 --- [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-21T09:40:09.732+09:00  INFO 13968 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-21T09:40:09.734+09:00  INFO 13968 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-21T09:40:09.773+09:00  INFO 13968 --- [http-nio-auto-2-exec-1] c.m.d.service.DepartmentService          : savedDepartment : Department(departmentId=7, departmentName=¿µ¾÷ºÎ)
+2024-08-21T09:40:09.792+09:00  WARN 13968 --- [http-nio-auto-2-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Content must not be null!]
+2024-08-21T09:42:06.548+09:00  INFO 13968 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-21T09:42:06.583+09:00  INFO 13968 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DEPARTMENT-SERVICE with eureka with status DOWN
+2024-08-21T09:42:06.584+09:00  INFO 13968 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724200926584, current=DOWN, previous=UP]
+2024-08-21T09:42:06.585+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:ed0f08605e5d52499d98ecbe1383dda8: registering service...
+2024-08-21T09:42:06.594+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:ed0f08605e5d52499d98ecbe1383dda8 - registration status: 204
+2024-08-21T09:42:06.614+09:00  INFO 13968 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-21T09:42:06.618+09:00  INFO 13968 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-08-21T09:42:06.626+09:00  INFO 13968 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T09:42:06.627+09:00  INFO 13968 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-21T09:42:06.632+09:00  INFO 13968 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-21T09:42:06.632+09:00  INFO 13968 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-08-21T09:42:09.638+09:00  INFO 13968 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-08-21T09:42:09.644+09:00  INFO 13968 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:ed0f08605e5d52499d98ecbe1383dda8 - deregister  status: 200
+2024-08-21T09:42:09.649+09:00  INFO 13968 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-08-21T09:42:14.251+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : The following 1 profile is active: "dev"
+2024-08-21T09:42:14.718+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-21T09:42:14.734+09:00  INFO 13968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2024-08-21T09:42:14.837+09:00  INFO 13968 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cf3abf0b-2322-3270-90f5-9c8030a55b46
+2024-08-21T09:42:14.925+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-08-21T09:42:14.927+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-21T09:42:14.927+09:00  INFO 13968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-08-21T09:42:14.954+09:00  INFO 13968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-21T09:42:14.954+09:00  INFO 13968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 698 ms
+2024-08-21T09:42:15.046+09:00  INFO 13968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-21T09:42:15.062+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-21T09:42:15.086+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14aa77cf
+2024-08-21T09:42:15.088+09:00  INFO 13968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-21T09:42:15.090+09:00  INFO 13968 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-21T09:42:15.151+09:00  INFO 13968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-21T09:42:15.153+09:00  INFO 13968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-21T09:42:15.284+09:00  WARN 13968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-21T09:42:17.001+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:42:17.067+09:00  WARN 13968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-21T09:42:18.197+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:42:18.204+09:00  INFO 13968 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-21T09:42:18.222+09:00  WARN 13968 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-21T09:42:18.240+09:00  INFO 13968 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-21T09:42:18.305+09:00  INFO 13968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55285 (http) with context path ''
+2024-08-21T09:42:18.310+09:00  INFO 13968 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55285
+2024-08-21T09:42:18.312+09:00  INFO 13968 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-21T09:42:18.317+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-21T09:42:18.319+09:00  INFO 13968 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-21T09:42:18.321+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-21T09:42:18.324+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-21T09:42:18.326+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-21T09:42:18.326+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-21T09:42:18.327+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-21T09:42:18.328+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-21T09:42:18.329+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-21T09:42:18.358+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-21T09:42:18.359+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-21T09:42:18.362+09:00  INFO 13968 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-21T09:42:18.362+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1724200938362 with initial instances count: 2
+2024-08-21T09:42:18.364+09:00  INFO 13968 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2024-08-21T09:42:18.364+09:00  INFO 13968 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724200938364, current=UP, previous=STARTING]
+2024-08-21T09:42:18.365+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:5d3a1bd1c28359087c7a5f9b381d81de: registering service...
+2024-08-21T09:42:18.383+09:00  INFO 13968 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/localhost:5d3a1bd1c28359087c7a5f9b381d81de - registration status: 204
+2024-08-21T09:42:19.504+09:00  INFO 13968 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-08-21T09:42:19.524+09:00  INFO 13968 --- [restartedMain] c.m.d.DepartmentServiceApplication       : Started DepartmentServiceApplication in 9.8 seconds (process running for 672.284)
+2024-08-21T09:42:19.527+09:00  INFO 13968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
