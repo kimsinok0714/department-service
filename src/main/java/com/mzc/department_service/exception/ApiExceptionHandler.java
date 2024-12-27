@@ -30,7 +30,7 @@ public class ApiExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<?> handleException(HttpServletRequest request, Exception ex) throws Exception {
 
-        ex.printStackTrace();
+        //ex.printStackTrace();
 
         ResponseDto.ResponseDtoBuilder responseBuilder = ResponseDto.builder();
         responseBuilder.code("500").message(ex.getMessage());
@@ -43,7 +43,7 @@ public class ApiExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<?> handleValidationException(MethodArgumentNotValidException ex) throws JSONException {
 
-        ex.printStackTrace();
+        //ex.printStackTrace();
 
         BindingResult bindingResult = ex.getBindingResult();
         StringBuilder builder = new StringBuilder();
@@ -58,7 +58,7 @@ public class ApiExceptionHandler {
         }
 
         ResponseDto.ResponseDtoBuilder responseBuilder = ResponseDto.builder();
-        responseBuilder.code("500").message(builder.toString());
+        responseBuilder.code("400").message(builder.toString());
         return ResponseEntity.ok(responseBuilder.build());
         
     }
